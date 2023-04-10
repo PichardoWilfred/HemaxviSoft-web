@@ -3,7 +3,26 @@ jQuery(document).ready(function( $ ) {
   $(document).on('click', '.social-links a.whatsapp', function(e) {
      // Copy the text inside the text field
     navigator.clipboard.writeText('8293431167');
+    const notify = $('.clipboard-notification');
+    notify.addClass('show');
+    notify[0].addEventListener('animationend', () => {
+      setTimeout(() => {
+        notify.addClass('fade');
+        notify.removeClass('show');
+      }, 1500);
+    });
+    notify[0].addEventListener('animationend', () => {
+      setTimeout(() => {
+        if (notify[0].classList.contains('fade')) {
+          console.log('removing...');
+          notify.removeClass('fade');
+        }
+      }, 1600);
+    });
+    
   });
+  
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -151,23 +170,23 @@ jQuery(document).ready(function( $ ) {
   });
 
   //Google Map
-  var get_latitude = $('#google-map').data('latitude');
-  var get_longitude = $('#google-map').data('longitude');
+  // var get_latitude = $('#google-map').data('latitude');
+  // var get_longitude = $('#google-map').data('longitude');
 
-  function initialize_google_map() {
-    var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-    var mapOptions = {
-      zoom: 14,
-      scrollwheel: false,
-      center: myLatlng
-    };
-    var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map
-    });
-  }
-  google.maps.event.addDomListener(window, 'load', initialize_google_map);
+  // function initialize_google_map() {
+  //   var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
+  //   var mapOptions = {
+  //     zoom: 14,
+  //     scrollwheel: false,
+  //     center: myLatlng
+  //   };
+  //   var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+  //   var marker = new google.maps.Marker({
+  //     position: myLatlng,
+  //     map: map
+  //   });
+  // }
+  // google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
 });
 

@@ -41,7 +41,7 @@
   <!--==========================
     Top Bar
   ============================-->
-  <section id="topbar" class="d-none d-lg-block">
+  <section id="topbar" class="d-none d-md-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
         <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">hemaxvisoft@gmail.com</a>
@@ -60,7 +60,7 @@
         <a href="javascript:void(0);" class="whatsapp position-relative">
           <i class="fa fa-whatsapp"></i>
           <div class="clipboard-notification position-absolute">
-            <i class="fa-regular fa-paste"></i>
+            <i class="fa fa-copy"></i>
             <span>Número copiado al portapapeles.</span>
           </div>
         </a>
@@ -75,21 +75,31 @@
     Header
   ============================-->
   <header id="header">
-    <div class="container">
+    <div class="container d-flex flex-wrap justify-content-center">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Hemaxvi<span>Soft</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!--<a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        <h1>
+          <a href="#body" class="scrollto">Hemaxvi<span>Soft</span> </a>
+        </h1>
       </div>
 
-      <nav id="nav-menu-container">
+      <nav id="nav-menu-container" class="ml-auto mt-md-2 mt-lg-0">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Inicio</a></li>
-          <li><a href="#about">Sobre Nosotros</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Galeria</a></li>
-          <li><a href="#team" >Nuestro Equipo</a></li>
+          <li class="menu-active">
+            <a href="#body">Inicio</a>
+          </li>
+          <li>
+            <a href="#about">Sobre Nosotros</a>
+          </li>
+          <li>
+            <a href="#services">Servicios</a>
+          </li>
+          <li>
+            <a href="#portfolio">Galeria</a>
+          </li>
+          <li>
+            <a href="#team" >Nuestro Equipo</a>
+          </li>
           <!--
             <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -136,20 +146,34 @@
     ============================-->
     <section id="about" class="wow fadeInUp">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-            <img src="img/about-img.jpg" alt="">
+        <div class="row align-content-center">
+          <div class="about-img col-lg-6 mb-3 mb-xl-0">
+            <img src="img/about-img.jpg" class="mt-md-4 pt-md-4" alt="">
           </div>
 
           <div class="col-lg-6 content">
-            <h2>Hemaxvi Soft </h2>
-            <h3>Hemaxvi nace con la idea de hacer algo diferente, esta da lugar el 11 de enero 2015, fue inspirada por un grupo de companeros universitario y nativos del mismo sector, Somos una empresa destinada a satisfacer a nuestros clientes con el mejor servicio y los mejores precios del mercado. Contamos con un staff de ingenieros que les resolveran sus problemas tecnologicos lo mas rapido posible.</h3>
-
+            <h2>¿Quiénes somos?</h2>
+            <h3>
+              Hemaxvi Soft es una empresa de desarrollo de software fundada en enero de 2015 con la visión de ofrecer servicios únicos y diferenciales. 
+              Contamos con un equipo de ingenieros altamente calificados que resuelven problemas tecnológicos de manera rápida y eficiente. 
+              Nos enfocamos en la satisfacción del cliente, ofreciendo soluciones innovadoras y adaptadas a las necesidades de cada proyecto. 
+              <br><br>
+              Hemaxvi Soft es tu opción confiable y profesional en el campo de la tecnología. <b>¡Conoce más sobre nuestros servicios y 
+              únete a nuestra lista de clientes satisfechos!</b>
+            </h3>
             <ul>
-              <li><i class="ion-android-checkmark-circle"></i> Computadoras</li>
-			  <li><i class="ion-android-checkmark-circle"></i> Sistema Movil Para Android</li>
-              <li><i class="ion-android-checkmark-circle"></i> Sistema Automatizado para su negocio</li>
-              <li><i class="ion-android-checkmark-circle"></i> Reparacion e Instalacion camara de seguridad</li>
+              <li class="font-weight-normal d-flex align-items-center font-weight-bold">
+                <i class="ion-android-checkmark-circle mr-1"></i> Computadoras.
+              </li>
+              <li class="font-weight-normal d-flex align-items-center font-weight-bold">
+                <i class="ion-android-checkmark-circle mr-1"></i> Sistema Móvil Para Android.
+              </li>
+              <li class="font-weight-normal d-flex align-items-center font-weight-bold">
+                <i class="ion-android-checkmark-circle mr-1"></i> Sistema Automatizado Para Su Negocio.
+              </li>
+              <li class="font-weight-normal d-flex align-items-center font-weight-bold">
+                <i class="ion-android-checkmark-circle mr-1"></i> Reparación e Instalación Cámara de Seguridad.
+              </li>
             </ul>
 
           </div>
@@ -165,7 +189,9 @@
       <div class="container">
         <div class="section-header">
           <h2>Servicios</h2>
-          <p> Ofrecemos los mejores servicios del mercado con profesionales altamente capacitado y unos precio muy bajo</p>
+          <p>En nuestra empresa, nos enorgullecemos de ofrecer los mejores servicios del mercado. Nuestro equipo está compuesto por profesionales altamente capacitados y experimentados en su campo, 
+            lo que garantiza un nivel de expertise y competencia excepcional en cada proyecto. Además, nos preocupamos por mantener nuestros precios competitivos, buscando siempre brindar un valor 
+            agregado a nuestros clientes al ofrecer servicios de alta calidad a precios accesibles.</p>
         </div>
 
         <div class="row">
@@ -174,23 +200,23 @@
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="fa fa-bar-chart"></i></div>
               <h4 class="title"><a href="">Computadoras</a></h4>
-              <p class="description">Ventas de computadoras y Laptops</p>
+              <p class="description">Amplia variedad de PCs y laptops en venta, con garantía y asesoramiento experto.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="box wow fadeInRight">
               <div class="icon"><i class="fa fa-picture-o"></i></div>
-              <h4 class="title"><a href="">Sistema Automatizado para escritorio y Movil Android</a></h4>
-              <p class="description">Los mejores sistema del mercado, contamos con una gran variedad de sistema para tu negocio, con equipo sumamente capacitado para llevarte la mejor calidad de servicios requerido.</p>
+              <h4 class="title"><a class="d-block text-truncate" href="">Sistema para Escritorio y Móvil</a></h4>
+              <p class="description">Ofrecemos los mejores sistemas, con equipo capacitado para garantizar calidad de servicio.</p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><a href="">Reparacion</a></h4>
-              <p class="description">Reparacion de computadoras</p>
+              <h4 class="title"><a href="">Reparación</a></h4>
+              <p class="description">Servicio profesional de reparación de computadoras con técnicos expertos y soluciones efectivas</p>
             </div>
           </div>
 
@@ -198,7 +224,7 @@
             <div class="box wow fadeInRight" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-map"></i></div>
               <h4 class="title"><a href="">Camara de Seguridad</a></h4>
-              <p class="description">Instalacion de camara de seguridad para tu empresa y hogar</p>
+              <p class="description">Servicios de instalación de cámaras de seguridad para empresa y hogar, con tecnología avanzada.</p>
             </div>
           </div>
 
@@ -214,7 +240,10 @@
       <div class="container">
         <div class="section-header">
           <h2>Clientes</h2>
-          <p>Clientes sastifecho con lo servicios brindados en nuestros software</p>
+          <p>Nuestra empresa se enorgullece de contar con clientes altamente satisfechos por los servicios de software que brindamos. 
+            Nuestro compromiso con la excelencia en nuestros productos y servicios ha generado un sólido historial de satisfacción del cliente, respaldado por comentarios 
+            positivos y testimonios de nuestros clientes satisfechos. 
+            Confíe en nosotros para sus necesidades de software y experimente un servicio de primer nivel respaldado por la satisfacción de nuestros valiosos clientes.</p>
         </div>
 
         <div class="owl-carousel clients-carousel">
@@ -237,8 +266,7 @@
     <section id="portfolio" class="wow fadeInUp">
       <div class="container">
         <div class="section-header">
-          <h2>Galeria</h2>
-          <p>Sistema de escritorio y Movil</p>
+          <h2>Galería</h2>
         </div>
       </div>
 
@@ -250,7 +278,9 @@
               <a href="img/portfolio/4.jpg" class="portfolio-popup">
                 <img src="img/portfolio/4.jpg" alt="">
                 <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Catalogo de nuestro sistema</h2></div>
+                  <div class="portfolio-info w-100 px-3">
+                    <h2 class="wow fadeInUp w-100">Catálogo de nuestro sistema</h2>
+                  </div>
                 </div>
               </a>
             </div>
@@ -261,7 +291,9 @@
               <a href="img/portfolio/2.jpg" class="portfolio-popup">
                 <img src="img/portfolio/2.jpg" alt="">
                 <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Sistema Facturacion</h2></div>
+                  <div class="portfolio-info w-100 px-3">
+                    <h2 class="wow fadeInUp w-100">Sistema Facturación</h2>
+                  </div>
                 </div>
               </a>
             </div>
@@ -272,7 +304,9 @@
               <a href="img/portfolio/3.jpg" class="portfolio-popup">
                 <img src="img/portfolio/3.jpg" alt="">
                 <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Sistema Banca Loteria</h2></div>
+                  <div class="portfolio-info w-100 px-3">
+                    <h2 class="wow fadeInUp w-100">Sistema Banca Lotería</h2>
+                  </div>
                 </div>
               </a>
             </div>
@@ -283,7 +317,9 @@
               <a href="img/portfolio/1.jpg" class="portfolio-popup">
                 <img src="img/portfolio/1.jpg" alt="">
                 <div class="portfolio-overlay">
-                  <div class="portfolio-info"><h2 class="wow fadeInUp">Sistema de Financiamiento</h2></div>
+                  <div class="portfolio-info w-100 px-3">
+                    <h2 class="wow fadeInUp w-100">Sistema de Financiamiento</h2>
+                  </div>
                 </div>
               </a>
             </div>
@@ -430,39 +466,47 @@
     <!--==========================
       Our Team Section
     ============================-->
-    <section id="team" class="wow fadeInUp">
+    <section id="team" class="wow fadeInUp w-100">
       <div class="container">
         <div class="section-header">
           <h2>Nuestro Equipo de Trabajo</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-lg-6 col-xl-3">
             <div class="member">
               <div class="pic"><img src="img/team-1.jpg" alt=""></div>
               <div class="details">
                 <h4>Ing. Junior Henriquez</h4>
-                <span>Desarrollador de Software</span>
+                <span style="font-size: 15px;">Desarrollador de Software</span>
                 <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <a href="">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="" class="mx-2">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-whatsapp"></i>
+                  </a>
+
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-sm-6 col-lg-6 col-xl-3">
             <div class="member">
               <div class="pic"><img src="img/team-2.jpg" alt=""></div>
               <div class="details">
                 <h4>Ing. Victor Manuel</h4>
-                <span>Desarrollador de Software</span>
+                <span style="font-size: 15px;">Desarrollador de Software</span>
                 <div class="social">
-                  <a href=""><i class="fa fa-twitter"></i></a>
+                  <!-- <a href=""><i class="fa fa-twitter"></i></a> -->
                   <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-google-plus"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
+                  <!-- <a href=""><i class="fa fa-google-plus"></i></a> -->
+                  <a href="" class="mx-2"><i class="fa fa-linkedin"></i></a>
+                  <a href=""><i class="fa fa-whatsapp"></i></a>
+
                 </div>
               </div>
             </div>
@@ -484,7 +528,7 @@
             </div>
           </div>
 
-          <!--div class="col-lg-3 col-md-6">
+          <!-- div class="col-lg-3 col-md-6">
             <div class="member">
               <div class="pic"><img src="img/team-4.jpg" alt=""></div>
               <div class="details">
@@ -511,29 +555,29 @@
       <div class="container">
         <div class="section-header">
           <h2>Contacto</h2>
-          <p>Estos son nuestros contacto, para comunicarte con nosotros solo debe de contactarnos a unos de ellos y pronto sera antendido</p>
+          <p>A continuación, te presentamos nuestros medios de contacto para comunicarte con nosotros. Si deseas ponerte en contacto con nuestro equipo, simplemente elige uno de los siguientes canales y te atenderemos a la brevedad posible.</p>
         </div>
 
         <div class="row contact-info">
 
           <div class="col-md-4">
-            <div class="contact-address">
+            <div class="contact-address d-flex flex-column justify-content-center align-items-center">
               <i class="ion-ios-location-outline"></i>
-              <h3>Direccion</h3>
-              <address>La palmita, Entrada de Siso Moca, Rep. Dom.</address>
+              <h3>Dirección</h3>
+              <address class="text-center" style="max-width: 200px">La palmita, Entrada de Siso Moca, Rep. Dom.</address>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="contact-phone">
+            <div class="contact-phone d-flex flex-column justify-content-center align-items-center">
               <i class="ion-ios-telephone-outline"></i>
-              <h3>Telefonos</h3>
+              <h3>Teléfonos</h3>
               <p><a href="tel:+155895548855">829-343-1167</a></p>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="contact-email">
+            <div class="contact-email d-flex flex-column justify-content-center align-items-center">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
               <p><a href="mailto:info@example.com">hemaxvisoft@gmail.com</a></p>
@@ -542,37 +586,50 @@
 
         </div>
       </div>
-
-      <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <iframe class="my-4" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3764.404068787322!2d-70.581068!3d19.351649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDIxJzA1LjkiTiA3MMKwMzQnNTEuOCJX!5e0!3m2!1ses-419!2sdo!4v1681165748731!5m2!1ses-419!2sdo" 
+            style="border:0; width: 100%; height: 600px; visibility: visible; max-width: 920px; margin-inline: auto; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div> -->
 
       <div class="container">
-        <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <!-- <div class="text-center"> -->
+                  <button class="d-flex justify-content-center send-email text-center mx-auto" type="submit">Send Message</button>
+                <!-- </div> -->
+              </form>
             </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
+          </div>
         </div>
-
       </div>
+
     </section><!-- #contact -->
 
   </main>
@@ -586,12 +643,6 @@
         &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
-        -->
         <a href="https://bootstrapmade.com/">Hemaxvi</a>Soft
       </div>
     </div>
