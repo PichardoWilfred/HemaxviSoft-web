@@ -298,7 +298,6 @@
               </a>
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="portfolio-item wow fadeInUp">
               <a href="img/portfolio/3.jpg" class="portfolio-popup">
@@ -443,7 +442,7 @@
         </div>
 
       </div>
-    </section><!-- #testimonials -->
+    </section> <!-- #testimonials -->
 
     <!--==========================
       Call To Action Section
@@ -461,7 +460,7 @@
         </div>
 
       </div>
-    </section><!-- #call-to-action -->
+    </section> <!-- #call-to-action -->
 
     <!--==========================
       Our Team Section
@@ -479,7 +478,6 @@
                 <h4>Ing. Junior Henriquez</h4>
                 <span style="font-size: 15px;">Desarrollador de Software</span>
                 <div class="social">
-                  <!-- <a href=""><i class="fa fa-twitter"></i></a> -->
                   <a href="">
                     <i class="fa fa-facebook"></i>
                   </a>
@@ -489,7 +487,6 @@
                   <a href="">
                     <i class="fa fa-whatsapp"></i>
                   </a>
-
                 </div>
               </div>
             </div>
@@ -547,7 +544,7 @@
         </div>
 
       </div>
-    </section><!-- #team -->
+    </section> <!-- #team -->
 
     <!--==========================
       Contact Section
@@ -605,24 +602,24 @@
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contact-form">
+              <form action="" class="contact-form">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
+                    <small class="validation"></small>
                   </div>
                   <div class="form-group col-md-6">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
+                    <small class="validation"></small>
                   </div>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
+                  <small class="validation"></small>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" style="resize: none;"></textarea>
+                  <small class="validation"></small>
                 </div>
                 <!-- <div class="text-center"> -->
                   <button class="d-flex justify-content-center send-email text-center mx-auto" type="submit">Send Message</button>
@@ -667,6 +664,12 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('HeQTjsXhTRoEBHO8c')
+</script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>

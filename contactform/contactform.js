@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
   "use strict";
 
   //Contact
-  $('form.contactForm').submit(function() {
+  $('form.contact-form').submit(function(e) {
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
@@ -88,25 +88,33 @@ jQuery(document).ready(function($) {
         i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-    if (ferror) return false;
-    else var str = $(this).serialize();
-    $.ajax({
-      type: "POST",
-      url: "contactform/contactform.php",
-      data: str,
-      success: function(msg) {
-        // alert(msg);
-        if (msg == 'OK') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
-        } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
-        }
+    // if (ferror) return false;
+    // else var str = $(this).serialize();
+    // $.ajax({
+    //   type: "POST",
+    //   url: "contactform/contactform.php",
+    //   data: str,
+    //   success: function(msg) {
+    //     // alert(msg);
+    //     if (msg == 'OK') {
+    //       $("#sendmessage").addClass("show");
+    //       $("#errormessage").removeClass("show");
+    //       $('.contactForm').find("input, textarea").val("");
+    //     } else {
+    //       $("#sendmessage").removeClass("show");
+    //       $("#errormessage").addClass("show");
+    //       $('#errormessage').html(msg);
+    //     }
+    //   }
+    // });
+    
+    const serviceID = 'service_b16wdlt';
+    const templateID = 'template_quxrm0j';
 
-      }
+    emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+    }, (err) => {
+    console.error(err)
     });
     return false;
   });
