@@ -572,7 +572,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Header
 --------------------------------*/
 .section-header {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .section-header h2 {
@@ -1041,7 +1041,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .contact-info h3 {
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-weight: bold;
   text-transform: uppercase;
   color: #50d8af;
@@ -1051,8 +1051,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #999;
 }
 
-#contact .contact-info a:hover {
-  color: #50d8af;
+#contact .contact-info :is(a, address):hover {
+  color: #289FBF;
+  text-decoration: underline;
 }
 
 #contact .contact-address, #contact .contact-phone, #contact .contact-email {
@@ -1169,4 +1170,7 @@ form.contact-form button.send-email {
   form.contact-form button.send-email {
     width: 100%;
   }
+}
+.form-control:focus {
+  border-color: #50d8af !important;
 }
