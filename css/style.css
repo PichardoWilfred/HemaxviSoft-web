@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .contact-info i {
-  color: #289FBF;
+  color: #0c2e8a;
   padding: 4px;
 }
 
@@ -1092,15 +1092,32 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 20px;
   }
 }
-
+#contact .form.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF80;
+  animation: fade-in-custom 0.15s ease-in-out;
+}
+@keyframes fade-in-custom {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
 #contact .form #sendmessage {
+  display: none;
   color: #289FBF;
   border: 1px solid #289FBF;
-  display: none;
   text-align: center;
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
+  animation: fade-in-custom 0.15s ease-in-out;
 }
 
 #contact .form #errormessage {
@@ -1118,8 +1135,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form .validation {
-  color: red;
   display: none;
+  color: #289FBF;
   margin: 0 0 20px;
   font-weight: 400;
   font-size: 13px;
