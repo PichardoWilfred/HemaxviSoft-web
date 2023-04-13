@@ -1,3 +1,4 @@
+import {animate_portrait} from './animations.js';
 jQuery(document).ready(function( $ ) {
   //copy number on whatsapp
   $(document).on('click', '.social-links a.whatsapp', function(e) {
@@ -192,5 +193,8 @@ jQuery(document).ready(function( $ ) {
 
 // Preloader
 $(window).on('load', function() {
-  $('#preloader').delay(100).fadeOut('slow',function(){$(this).remove();});
+  $('#preloader').delay(100).fadeOut('slow', function () {
+    $(this).remove();
+    animate_portrait();
+  });
 });
