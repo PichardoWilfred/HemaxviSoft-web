@@ -242,15 +242,12 @@ section.portrait-container {
 }
 section.portrait-container div.portrait { }
 section.portrait-container div.portrait div.company-description {
-  width: 53%;
-}
-section.portrait-container div.portrait div.logo-animation {
-  width: 47%;
+  width: 100%;
 }
 section.portrait-container div.portrait div.company-description h1.title {
   color: #0C2E8A;
   font-weight: 500;
-  font-size: 42px;
+  font-size: clamp(17px, 6.7vw, 36px);
   font-family: 'Poppins', sans-serif;
 }
 section.portrait-container div.portrait div.company-description h1.title b {
@@ -263,7 +260,7 @@ section.portrait-container div.portrait div.company-description h1.title b {
 section.portrait-container div.portrait div.company-description p.description {
   color: #0C2E8A;
   font-weight: 500;
-  font-size: 16px;
+  font-size: clamp(14px, 3vw, 16px);
   max-width: 457px;
 }
 
@@ -272,8 +269,9 @@ section.portrait-container div.portrait div.company-description p.description b 
   font-weight: 600;
 }
 section.portrait-container div.portrait div.company-description button.contact-us {
-  padding: 1rem 2rem;
+  width: 80%;
   font-size: 16px;
+  font-family: 'Poppins';
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 6px;
@@ -281,11 +279,14 @@ section.portrait-container div.portrait div.company-description button.contact-u
   border-radius: 6px;
   cursor: pointer;
   text-align: center;
-  transition: 0.35s var(--adobe-timing);;
-  color: #ffffff;
+  transition: 0.35s var(--adobe-timing);
   
   background-size: 200% auto;
   background-image: linear-gradient(to right, #292d7a 0%, #289fbf 51%, #1e5c9f  100%);
+}
+section.portrait-container div.portrait div.company-description button.contact-us a{
+  color: white;
+  padding: 1rem 2rem;
 }
 
 section.portrait-container div.portrait div.company-description button.contact-us:hover {
@@ -302,16 +303,16 @@ section.portrait-container div.portrait div.company-description button.contact-u
 }
 svg.base-logo {
   opacity: 0;
-  width: 100%;
+  width: auto;
   z-index: 6;
 }
 svg.fragments {   
   position: relative;
   opacity: 0;
-  top: 35px;
-  width: 84px;
+  top: 29px;
+  width: 101px;
   height: 113px;
-  margin-left: 200px;
+  margin-left: 177px;
 }
 svg.fragments.float {
   opacity: 1;
@@ -418,7 +419,7 @@ svg.base-logo.slide-in {
   }
 }
 section.portrait-container div.title-container {
-  height: 70px;
+  height: 64px;
 }
 section.portrait-container div.title-container div.separator-container {
   background-color: #2A2D7A;
@@ -461,10 +462,10 @@ section.portrait-container div.title-container h2:is(.title-light, .title-bold) 
 
 section.portrait-container div.title-container h2.title-light {
   color: #2A2D7A;
+  font-size: 32px;
   font-weight: 500;
   font-family: 'Poppins';
   text-align: right;
-  font-size: 46px;
   z-index: 1;
   transform: translateX(70%);
   transition: transform .4s ease;
@@ -473,9 +474,10 @@ section.portrait-container div.title-container h2.title-light {
 section.portrait-container div.title-container h2.title-bold {
   color: #289FBF;
   font-family: 'Poppins';
-  font-size: 52px;
-  letter-spacing: 16px;
+  
+  letter-spacing: 11px;
   font-weight: 800;
+  font-size: 42px;
   transform: translateX(-70%);
   transition: transform .4s ease;
   z-index: 2;
@@ -501,12 +503,11 @@ section.portrait-container div.title-container.showing h2:is(.title-light, .titl
 }
 section.portrait-container h3.subtitle {
   opacity: 0;
-  font-size: 20px;
   font-weight: 500;
-  font-family: 'Poppins';
-  letter-spacing: 12px;
+  font-size: 15px;
+  font-family: 'Poppins';    
+  letter-spacing: 9px;
   color: #090909;
-  /* margin-bottom: 12px; */
 
   transform: translateY(12%);
   transition: all .15s ease;
@@ -525,31 +526,86 @@ div.deactivate-animations > * {
   top: 0;
 }
 
+section.portrait-container div.portrait div.logo-animation {
+  margin-bottom: 7.5rem;
+}
 @media (min-width: 576px) {
   section.portrait-container {
     min-height: unset;  /*only mobile*/
   }
-}
-@media (min-width: 768px) {
-  section.portrait-container {
-    /* height: 60vh; */
+  section.portrait-container div.portrait div.company-description p.description {
+    font-size: 16px;
   }
   svg.base-logo {
-    width: 318px;
+    width: 370px;
+    height: 270px;
   }
+  svg.fragments {
+    width: 115px;
+    height: 128px;
+    margin-left: 224px;
+  }
+  section.portrait-container div.portrait div.logo-animation {
+    margin-bottom: 6rem;
+  }
+  section.portrait-container div.title-container {
+    height: 74px;
+  }
+  section.portrait-container div.title-container h2.title-light { 
+    font-size: 42px;
+  }
+  section.portrait-container div.title-container h2.title-bold { 
+    font-size: 52px;
+    letter-spacing: 16px;
+  }
+  section.portrait-container h3.subtitle {
+    font-size: 20px;
+    letter-spacing: 12px;
+  }
+}
+@media (min-width: 768px) {
   svg.fragments {   
     top: 27px;
     width: 97px;
     height: 113px;
     margin-left: 229px;
   }
-  section.portrait-container div.logo-animation {
-    /* min-width: 280px; */
+  section.portrait-container div.portrait div.company-description button.contact-us {
+    width: max-content;
+  }
+  section.portrait-container div.portrait div.company-description h1.title {
+    font-size: 37px;
+  }
+}
+@media (min-width: 992px) {
+  section.portrait-container div.portrait div.company-description {
+    width: 53%;
+  }
+  section.portrait-container div.title-container {
+    height: 56px;
+  }
+  svg.fragments {
+    width: 96px;
+    height: 115px;
+    margin-left: 199px;
+  }
+  svg.base-logo {
+    width: 300px;
+    height: 216px;
+  }
+  section.portrait-container div.title-container h2.title-light { 
+    font-size: 38px;
+  }
+  section.portrait-container div.title-container h2.title-bold { 
+    font-size: 44px;
   }
 }
 @media (min-width: 1200px) {
   section.portrait-container {
     height: 60vh;
+  }
+  section.portrait-container div.title-container {
+    height: 70px;
   }
   section.portrait-container div.portrait div.company-description {
     width: 60%;
@@ -560,12 +616,6 @@ div.deactivate-animations > * {
     width: 370px;
     height: 270px;
   }
-  svg.fragments {
-    top: 22px;
-    margin-left: 240px;
-    width: 106px;
-    height: 120px;
-  }
   section.portrait-container div.portrait div.logo-animation {
     margin-inline: unset;
     width: 40%;
@@ -573,12 +623,25 @@ div.deactivate-animations > * {
   section.portrait-container div.portrait div.company-description h1.title {
     font-size: 55px;
   }
+  
   section.portrait-container div.portrait div.company-description p.description {
     max-width: 580px;
     font-size: 20px;
   }
   section.portrait-container div.portrait div.company-description button.contact-us {
     font-size: 20px;
+  }
+  
+  svg.fragments {
+    top: 30px;
+    margin-left: 240px;
+  }
+  section.portrait-container div.title-container h2.title-light {
+    font-size: 46px;
+  }
+  
+  section.portrait-container div.title-container h2.title-bold { 
+    font-size: 52px;
   }
 }
 /* 
@@ -673,7 +736,7 @@ div.deactivate-animations > * {
   color: #0c2e8a;
 }
 
-.nav-menu > li {
+.nav-menu > li:not(:first-child) {
   margin-left: 10px;
 }
 
