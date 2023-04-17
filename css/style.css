@@ -253,7 +253,7 @@ section.portrait-container div.portrait div.company-description h1.title {
 section.portrait-container div.portrait div.company-description h1.title b {
   color: #289FBF;
   font-weight: 700;    
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -310,8 +310,8 @@ svg.fragments {
   position: relative;
   opacity: 0;
   top: 29px;
-  width: 101px;
-  height: 113px;
+  width: 116px;
+  height: 145px;
   margin-left: 177px;
 }
 svg.fragments.float {
@@ -462,9 +462,9 @@ section.portrait-container div.title-container h2:is(.title-light, .title-bold) 
 
 section.portrait-container div.title-container h2.title-light {
   color: #2A2D7A;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 500;
-  font-family: 'Poppins';
+  font-family: 'Poppins'; 
   text-align: right;
   z-index: 1;
   transform: translateX(70%);
@@ -477,7 +477,7 @@ section.portrait-container div.title-container h2.title-bold {
   
   letter-spacing: 11px;
   font-weight: 800;
-  font-size: 42px;
+  font-size: 40px;
   transform: translateX(-70%);
   transition: transform .4s ease;
   z-index: 2;
@@ -504,7 +504,7 @@ section.portrait-container div.title-container.showing h2:is(.title-light, .titl
 section.portrait-container h3.subtitle {
   opacity: 0;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 19px;
   font-family: 'Poppins';    
   letter-spacing: 9px;
   color: #090909;
