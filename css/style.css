@@ -982,7 +982,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  padding: 30px 0 0 0;
+  padding: 30px 0 80px 0;
 }
 
 #services .service-card {
@@ -999,8 +999,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
 }
-#services .service-card .icon {
-  margin-right: 22px;
+#services .service-card .icon img{
+  width: 110px;
 }
 #services .service-card .icon i:before {
   background: linear-gradient(90deg, #292d7a 0%, #1e5c9f 51%, #289fbf 100%);
@@ -1011,7 +1011,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .service-card h4 {
-  /* margin-left: 100px; */
   font-weight: 700;
   margin-bottom: 8px;
   font-size: 22px;
@@ -1023,7 +1022,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .service-card p {
   font-size: 14px;
-  /* margin-left: 100px; */
   margin-bottom: 0;
   line-height: 24px;
 }
@@ -1037,27 +1035,84 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
     padding-bottom: 15px;
   }
+}
+#portfolio .custom-column {
+  max-width: 337px;
+}
+#portfolio .custom-card {
+  border-radius: 20px;
+  height: 480px;
+  overflow: hidden;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  box-shadow: #2A8CFF05 0px 1px 3px 0px, #2A8CFF26 0px 1px 2px 0px;
+}
+#portfolio .custom-card img {
+  display: block;
+  margin-top: -25px;
+  height: 280px;
+}
+#portfolio .custom-card .custom-card-content {
+  padding: 28px;
+  padding-top: 0;
+}
+#portfolio .custom-card h1 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  margin-top: 17px;
+  margin-bottom: 15px;
+  color: #1B1725;
+}
+#portfolio .custom-card h1.blue {
+  color: #2B8CFF;
+}
+#portfolio .custom-card p {
+  margin-bottom: 0;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #403B4A;
+  font-size: 15px;
+  
+}
+@media (max-width: 577px) {
   #services .service-card h4, #services .service-card p {
     margin-left: 0;
     text-align: center;
   }
 }
 
-/* Clients Section
---------------------------------*/
+#customized-services .content a:hover{
+  text-decoration: underline;
+}
+#customized-services .content .text {
+  font-weight: 400;
+  font-family: 'Poppins';
+  color: #1B1725;
+  width: max(551px, 60%);
+}
+@media (min-width: 768px) {
+  #customized-services .content .text {
+    padding-right: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .service-card .info .title {
+    max-width: 267px;
+  }
+}
+
 #clients {
   padding: 30px 0;
 }
 
 #clients img {
   max-width: 100%;
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.3s;
   padding: 15px 0;
 }
 
 #clients img:hover {
-  opacity: 1;
+  opacity: .6;
 }
 
 #clients .owl-nav, #clients .owl-dots {
